@@ -7,6 +7,7 @@ import Home from './Components/Home';
 import About from './Components/About';
 import Contact from './Components/Contact';
 import Github from './Components/Github';
+import User from './Components/User';
 
 const router=createBrowserRouter(
   createRoutesFromElements(
@@ -15,6 +16,7 @@ const router=createBrowserRouter(
         <Route path="about" element={<About/>}/>
         <Route path='contact' element={<Contact/>}/>
         <Route path='github' element={<Github/>}/>
+        <Route path='user/:userid' element={<User />}/>
     </Route>
   )
 )
